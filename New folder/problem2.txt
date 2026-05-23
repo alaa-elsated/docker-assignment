@@ -1,0 +1,23 @@
+C:\Users\user>docker run -it ubuntu
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+1c24335ddd46: Pull complete
+6f5c5aa4e145: Pull complete
+9bcf140d7f0f: Download complete
+Digest: sha256:f3d28607ddd78734bb7f71f117f3c6706c666b8b76cbff7c9ff6e5718d46ff64
+Status: Downloaded newer image for ubuntu:latest
+root@43f46a510373:/# echo docker
+docker
+root@43f46a510373:/# touch hello-docker
+root@43f46a510373:/# is
+bash: is: command not found
+root@43f46a510373:/# Is
+bash: Is: command not found
+root@43f46a510373:/# ls
+bin  boot  dev  etc  hello-docker  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@43f46a510373:/# exit
+exit
+
+C:\Users\user>docker ps -a
+CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS                      PORTS     NAMES
+43f46a510373   ubuntu    "/bin/bash"   14 minutes ago   Exited (0) 17 seconds ago             admiring_goldwasser

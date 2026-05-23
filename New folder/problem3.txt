@@ -1,0 +1,22 @@
+C:\Users\user>docker run -d --name app-database -e MYSQL_ROOT_PASSWORD=P4sSw0rd0! mysql:latest
+Unable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+8ec50bfa3b7e: Pull complete
+8e3f19ed5e67: Pull complete
+5491a2a13e1b: Pull complete
+f74943462a4f: Pull complete
+e80b372994e5: Pull complete
+802b6dd0c6bd: Pull complete
+1dced004aaec: Pull complete
+35300b480a58: Pull complete
+69edacfaea72: Pull complete
+4f23ccd26206: Pull complete
+9c6d3f438d99: Download complete
+b3e52f10da63: Download complete
+Digest: sha256:c11782aa2a96624c1efc121768641d96954faa136d6aa82751b032d8c426ffbc
+Status: Downloaded newer image for mysql:latest
+6382ee646e392d3535adf47905efbc5e9a34835074caab59ab45175154ee58b1
+
+C:\Users\user>docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                 NAMES
+6382ee646e39   mysql:latest   "docker-entrypoint.s…"   41 seconds ago   Up 39 seconds   3306/tcp, 33060/tcp   app-database

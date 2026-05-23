@@ -1,0 +1,26 @@
+C:\Users\user>docker run -d -p 8080:80 --name mynginx nginx
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+13fd728be9eb: Pull complete
+830625e1ac85: Pull complete
+b4a248c845e5: Pull complete
+5431d0092ffd: Pull complete
+45381ecb0e2f: Pull complete
+5b4d6ff92fc4: Pull complete
+7f8b1a2b17d8: Pull complete
+cc5f57206478: Download complete
+5e6b66b5e5f1: Download complete
+Digest: sha256:5aca99593157f4ae539a5dec1092a0ad8762f8e2eb1789085a13a0f5622369f6
+Status: Downloaded newer image for nginx:latest
+ddbe0a12e7e427b4844303e27ceb5c5edfe4b668c84c82183acb14e957baf772
+
+C:\Users\user>docker commit mynginx my-nginx-image
+sha256:c20c1228534386129b012bf3d000112cda2f5ff33d4532846f0a256183739365
+
+C:\Users\user>docker images
+                                                                                                    i Info →   U  In Use
+IMAGE                   ID             DISK USAGE   CONTENT SIZE   EXTRA
+my-nginx-image:latest   c20c12285343        238MB         63.1MB
+mysql:latest            c11782aa2a96        1.3GB          290MB    U
+nginx:latest            5aca99593157        241MB           66MB    U
+ubuntu:latest           f3d28607ddd7        160MB         45.3MB    U
